@@ -1,0 +1,3 @@
+WARNING:root:Running gunrock pagerank with default damping factor = 0.85...
+INFO:root:Elapsed time measured by gunrock: 0s.
+INFO:root:Elapsed time measured by host: 1.87896513939s.

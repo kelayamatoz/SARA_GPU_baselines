@@ -1,0 +1,104 @@
+Loading Matrix-market coordinate-formatted graph ...
+  Reading meta data from ../../dataset/small/chesapeake.mtx.meta
+  Reading edge lists from ../../dataset/small/chesapeake.mtx.coo_edge_pairs
+Reading from ../../dataset/small/chesapeake.mtx.coo_edge_pairs, typeId = 262, targetId = 262, length = 170
+  Substracting 1 from node Ids...
+  Edge doubleing: 170 -> 340 edges
+  graph loaded as COO in 0.018162s.
+Converting 39 vertices, 340 directed edges ( ordered tuples) to CSR format...Done (0s).
+Degree Histogram (39 vertices, 340 edges):
+    Degree 0: 0 (0.000000 %)
+    Degree 2^0: 0 (0.000000 %)
+    Degree 2^1: 1 (2.564103 %)
+    Degree 2^2: 22 (56.410256 %)
+    Degree 2^3: 13 (33.333333 %)
+    Degree 2^4: 2 (5.128205 %)
+    Degree 2^5: 1 (2.564103 %)
+
+__________________________
+pr_nibble::CPU_Reference: reached max iterations. breaking at it=1
+--------------------------
+ Elapsed: 0.012875
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=true undirected=false advance-mode=LB
+Using advance mode LB
+Using filter mode CULL
+__________________________
+pr_nibble::Stop_Condition: reached max iterations. breaking at it=1
+--------------------------
+Run 0 elapsed: 0.226974, #iterations = 1
+PASSED
+[pr_nibble] finished.
+ avg. elapsed: 0.226974 ms
+ iterations: 1
+ min. elapsed: 0.000000 ms
+ max. elapsed: 0.000000 ms
+ src: 0
+ nodes_visited: 140728755718816
+ edges_visited: 94054504298240
+ nodes queued: 94054463736119
+ edges queued: 94054504298240
+ load time: 18.2631 ms
+ preprocess time: 765.066000 ms
+ postprocess time: 0.064850 ms
+ total time: 765.606880 ms
+Loading Matrix-market coordinate-formatted graph ...
+  Reading meta data from ../../dataset/small/jhu.mtx.meta
+  Reading edge lists from ../../dataset/small/jhu.mtx.coo_edge_pairs
+Reading from ../../dataset/small/jhu.mtx.coo_edge_pairs, typeId = 262, targetId = 262, length = 186572
+  Substracting 1 from node Ids...
+  Edge doubleing: 186572 -> 373144 edges
+  graph loaded as COO in 0.218353s.
+Converting 5157 vertices, 373144 directed edges ( ordered tuples) to CSR format...Done (0s).
+Degree Histogram (5157 vertices, 373144 edges):
+    Degree 0: 0 (0.000000 %)
+    Degree 2^0: 179 (3.471010 %)
+    Degree 2^1: 198 (3.839442 %)
+    Degree 2^2: 269 (5.216211 %)
+    Degree 2^3: 412 (7.989141 %)
+    Degree 2^4: 677 (13.127787 %)
+    Degree 2^5: 1139 (22.086484 %)
+    Degree 2^6: 1373 (26.624006 %)
+    Degree 2^7: 802 (15.551677 %)
+    Degree 2^8: 105 (2.036067 %)
+    Degree 2^9: 3 (0.058173 %)
+
+__________________________
+pr_nibble::CPU_Reference: reached max iterations. breaking at it=20
+--------------------------
+ Elapsed: 107.588051
+==============================================
+64bit-VertexT=false 64bit-SizeT=false 64bit-ValueT=true undirected=false advance-mode=LB
+Using advance mode LB
+Using filter mode CULL
+__________________________
+0	 2	 0	 queue3 	 oversize :	 30942 ->	 264164
+0	 2	 0	 queue3 	 oversize :	 30942 ->	 264164
+0	 3	 0	 queue3 	 oversize :	 264164 ->	 280587
+0	 3	 0	 queue3 	 oversize :	 264164 ->	 280587
+0	 4	 0	 queue3 	 oversize :	 280587 ->	 307477
+0	 4	 0	 queue3 	 oversize :	 280587 ->	 307477
+0	 5	 0	 queue3 	 oversize :	 307477 ->	 324199
+0	 5	 0	 queue3 	 oversize :	 307477 ->	 324199
+0	 6	 0	 queue3 	 oversize :	 324199 ->	 332686
+0	 6	 0	 queue3 	 oversize :	 324199 ->	 332686
+0	 7	 0	 queue3 	 oversize :	 332686 ->	 332948
+0	 7	 0	 queue3 	 oversize :	 332686 ->	 332948
+pr_nibble::Stop_Condition: reached max iterations. breaking at it=20
+--------------------------
+Run 0 elapsed: 9.094954, #iterations = 20
+PASSED
+[pr_nibble] finished.
+ avg. elapsed: 9.094954 ms
+ iterations: 1
+ min. elapsed: 0.000000 ms
+ max. elapsed: 0.000000 ms
+ src: 0
+ nodes_visited: 140732259114640
+ edges_visited: 93941544953600
+ nodes queued: 93941507053879
+ edges queued: 93941544953600
+ load time: 220.476 ms
+ preprocess time: 778.583000 ms
+ postprocess time: 0.272989 ms
+ total time: 788.182974 ms

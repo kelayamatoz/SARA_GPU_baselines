@@ -1,0 +1,4 @@
+squeezenet, latency:
+- start: 1,919.516
+- end: 1,989.596 + 0.018
+- duration: 70.097 ms

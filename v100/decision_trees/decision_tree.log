@@ -1,0 +1,96 @@
+1
+5
+17
+17
+17
+17
+3
+17
+In CUDA's scope....
+n_nodes = 1
+d_tr = 0x7f11dca00400
+cuda_trees[i] = 0x55ec21934600
+(cuda_trees)[i] = 0x55ec21934600
+>>> Accessing the 0th tree ...
+(left_idx = -1, right_idx = -1, value = 8.20162, ft_idx = 0), 
+>>> Memcpy length = 16
+>>> Testing cuda memcpy
+>>> Passed cuda memcpy
+n_nodes = 5
+d_tr = 0x7f11dca00600
+cuda_trees[i] = 0x55ec2190b2e0
+(cuda_trees)[i] = 0x55ec2190b2e0
+>>> Accessing the 1th tree ...
+(left_idx = 1, right_idx = 4, value = 3.47518, ft_idx = 22), (left_idx = 2, right_idx = 3, value = 9.47195, ft_idx = 7), (left_idx = -1, right_idx = -1, value = 0.122344, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 18.7973, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 7.94349, ft_idx = 0), 
+>>> Memcpy length = 80
+>>> Testing cuda memcpy
+>>> Passed cuda memcpy
+n_nodes = 17
+d_tr = 0x7f11dca00800
+cuda_trees[i] = 0x55ec21934a70
+(cuda_trees)[i] = 0x55ec21934a70
+>>> Accessing the 2th tree ...
+(left_idx = 1, right_idx = 16, value = 6.55174, ft_idx = 22), (left_idx = 2, right_idx = 15, value = 8.89909, ft_idx = 12), (left_idx = 3, right_idx = 4, value = 2.17602, ft_idx = 28), (left_idx = -1, right_idx = -1, value = 13.1979, ft_idx = 0), (left_idx = 5, right_idx = 14, value = 3.94521, ft_idx = 10), (left_idx = 6, right_idx = 13, value = 5.40397, ft_idx = 7), (left_idx = 7, right_idx = 12, value = 0.106844, ft_idx = 30), (left_idx = 8, right_idx = 9, value = 2.04914, ft_idx = 27), (left_idx = -1, right_idx = -1, value = 0.100504, ft_idx = 0), (left_idx = 10, right_idx = 11, value = 5.771, ft_idx = 19), (left_idx = -1, right_idx = -1, value = 2.84045, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 10.8911, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 3.69414, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 3.5611, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 4.90853, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 4.66312, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 11.8476, ft_idx = 0), 
+>>> Memcpy length = 272
+>>> Testing cuda memcpy
+>>> Passed cuda memcpy
+n_nodes = 17
+d_tr = 0x7f11dca00a00
+cuda_trees[i] = 0x55ec21937200
+(cuda_trees)[i] = 0x55ec21937200
+>>> Accessing the 3th tree ...
+(left_idx = 1, right_idx = 16, value = 6.37497, ft_idx = 11), (left_idx = 2, right_idx = 3, value = 8.03619, ft_idx = 2), (left_idx = -1, right_idx = -1, value = 4.13475, ft_idx = 0), (left_idx = 4, right_idx = 15, value = 9.83103, ft_idx = 28), (left_idx = 5, right_idx = 14, value = 2.54909, ft_idx = 1), (left_idx = 6, right_idx = 13, value = 7.89191, ft_idx = 8), (left_idx = 7, right_idx = 10, value = 5.48953, ft_idx = 10), (left_idx = 8, right_idx = 9, value = 4.91451, ft_idx = 19), (left_idx = -1, right_idx = -1, value = 12.6081, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 10.1532, ft_idx = 0), (left_idx = 11, right_idx = 12, value = 1.72649, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 14.3464, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 4.18985, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 11.7563, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 4.09271, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 4.50045, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 3.26207, ft_idx = 0), 
+>>> Memcpy length = 272
+>>> Testing cuda memcpy
+>>> Passed cuda memcpy
+n_nodes = 17
+d_tr = 0x7f11dca00c00
+cuda_trees[i] = 0x55ec219395a0
+(cuda_trees)[i] = 0x55ec219395a0
+>>> Accessing the 4th tree ...
+(left_idx = 1, right_idx = 16, value = 8.86744, ft_idx = 18), (left_idx = 2, right_idx = 5, value = 3.75808, ft_idx = 17), (left_idx = 3, right_idx = 4, value = 9.87102, ft_idx = 29), (left_idx = -1, right_idx = -1, value = 14.1409, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 10.1899, ft_idx = 0), (left_idx = 6, right_idx = 7, value = 4.23233, ft_idx = 30), (left_idx = -1, right_idx = -1, value = 16.4796, ft_idx = 0), (left_idx = 8, right_idx = 15, value = 7.4425, ft_idx = 20), (left_idx = 9, right_idx = 14, value = 5.98632, ft_idx = 10), (left_idx = 10, right_idx = 13, value = 6.03984, ft_idx = 26), (left_idx = 11, right_idx = 12, value = 0.740479, ft_idx = 16), (left_idx = -1, right_idx = -1, value = 0.562407, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 1.46052, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 5.60003, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 7.07647, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 17.5289, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 14.5965, ft_idx = 0), 
+>>> Memcpy length = 272
+>>> Testing cuda memcpy
+>>> Passed cuda memcpy
+n_nodes = 17
+d_tr = 0x7f11dca00e00
+cuda_trees[i] = 0x55ec219376c0
+(cuda_trees)[i] = 0x55ec219376c0
+>>> Accessing the 5th tree ...
+(left_idx = 1, right_idx = 6, value = 8.80599, ft_idx = 19), (left_idx = 2, right_idx = 3, value = 5.67293, ft_idx = 22), (left_idx = -1, right_idx = -1, value = 18.0385, ft_idx = 0), (left_idx = 4, right_idx = 5, value = 5.86321, ft_idx = 7), (left_idx = -1, right_idx = -1, value = 8.554, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 1.23804, ft_idx = 0), (left_idx = 7, right_idx = 8, value = 3.06483, ft_idx = 8), (left_idx = -1, right_idx = -1, value = 4.92971, ft_idx = 0), (left_idx = 9, right_idx = 10, value = 7.74604, ft_idx = 20), (left_idx = -1, right_idx = -1, value = 6.75442, ft_idx = 0), (left_idx = 11, right_idx = 16, value = 1.1049, ft_idx = 13), (left_idx = 12, right_idx = 15, value = 9.29103, ft_idx = 29), (left_idx = 13, right_idx = 14, value = 6.76123, ft_idx = 18), (left_idx = -1, right_idx = -1, value = 7.38269, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 3.54485, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 14.8674, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 12.8802, ft_idx = 0), 
+>>> Memcpy length = 272
+>>> Testing cuda memcpy
+>>> Passed cuda memcpy
+n_nodes = 3
+d_tr = 0x7f11dca01000
+cuda_trees[i] = 0x55ec219396c0
+(cuda_trees)[i] = 0x55ec219396c0
+>>> Accessing the 6th tree ...
+(left_idx = 1, right_idx = 2, value = 0.421787, ft_idx = 19), (left_idx = -1, right_idx = -1, value = 3.93379, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 3.15261, ft_idx = 0), 
+>>> Memcpy length = 48
+>>> Testing cuda memcpy
+>>> Passed cuda memcpy
+n_nodes = 17
+d_tr = 0x7f11dca01200
+cuda_trees[i] = 0x55ec21939700
+(cuda_trees)[i] = 0x55ec21939700
+>>> Accessing the 7th tree ...
+(left_idx = 1, right_idx = 2, value = 2.50296, ft_idx = 16), (left_idx = -1, right_idx = -1, value = 14.255, ft_idx = 0), (left_idx = 3, right_idx = 4, value = 5.55967, ft_idx = 30), (left_idx = -1, right_idx = -1, value = 0.601377, ft_idx = 0), (left_idx = 5, right_idx = 16, value = 5.7223, ft_idx = 9), (left_idx = 6, right_idx = 15, value = 1.30222, ft_idx = 31), (left_idx = 7, right_idx = 10, value = 9.96523, ft_idx = 11), (left_idx = 8, right_idx = 9, value = 5.12719, ft_idx = 21), (left_idx = -1, right_idx = -1, value = 7.30611, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 6.45338, ft_idx = 0), (left_idx = 11, right_idx = 14, value = 9.66254, ft_idx = 25), (left_idx = 12, right_idx = 13, value = 7.7795, ft_idx = 18), (left_idx = -1, right_idx = -1, value = 8.88913, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 14.3815, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 15.6271, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 8.90363, ft_idx = 0), (left_idx = -1, right_idx = -1, value = 13.1216, ft_idx = 0), 
+>>> Memcpy length = 272
+>>> Testing cuda memcpy
+>>> Passed cuda memcpy
+>>> Copying the meta pointers for d_trees
+>>> Copying the meta pointers for d_tree_sizes
+>>> Malloced the tree structures...
+>>> Pinning data samples to the device memory
+>>> Updated device samples
+>>> Starting kernel
+>>> End kernel execution
+>>> Freeing d_trees
+>>> Freeing d_tree sizes
+>>> Freeing d_samples
+>>> Freeing d_samples metadata
+>>> Freeing d_scores
+>>> REPORT
+>>> Average sample scores: 75.5625
+>>> Kernel execution time: 0.08704ms

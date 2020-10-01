@@ -1,0 +1,61 @@
+==1232== NVPROF is profiling process 1232, command: ./bin/test_pr_10.0_x86_64 market /home/tzhao713/pldi20/v100/grock/dataset/large/delaunay_n20/delaunay_n20.mtx --quick --iteration-num=1 --pull=1 --device=0 --jsondir=./eval/ubuntu14.04_K40cx1
+==1232== Profiling application: ./bin/test_pr_10.0_x86_64 market /home/tzhao713/pldi20/v100/grock/dataset/large/delaunay_n20/delaunay_n20.mtx --quick --iteration-num=1 --pull=1 --device=0 --jsondir=./eval/ubuntu14.04_K40cx1
+==1232== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:   34.43%  6.8325ms        16  427.03us  1.6640us  4.2616ms  [CUDA memcpy HtoD]
+                   27.40%  5.4379ms        22  247.18us  1.8230us  3.0566ms  [CUDA memcpy DtoH]
+                   21.17%  4.2009ms         7  600.12us  598.52us  601.76us  _ZN7gunrock5oprtr2AE6KernelILj33554449ENS_5graph3CscIjjdLj512ELj0ELb1EEEjjZNS0_14neighborreduce6LaunchILj33554449ES5_NS_4util7Array1DIjjLj0ELj0EEESA_NS0_15OprtrParametersINS_3app9TestGraphIjjdLj1536ELj0EEENSC_8FrontierIjjLj0ELj0EEEjEEZNSC_2pr15PRIterationLoopINSI_7EnactorINSI_7ProblemISE_dLj0EEELj0ELj0EEEE4CoreEiEUlRKjRjSQ_SQ_SQ_SR_E0_ZNSO_4CoreEiEUlRKdSU_E_EE9cudaErrorRKT0_PT1_PT2_RT3_T4_T5_NS14_6ValueTEEUlSQ_SR_SQ_SQ_SQ_SR_E_EEvbNSX_7VertexTESX_S13_PNSX_6ValueTENS8_15CtaWorkProgressINSX_5SizeTEEES14_
+                    4.62%  917.10us         7  131.01us  129.94us  132.66us  _ZN7gunrock4util6reduce16SegReduce_KernelIddjZNS_3app2pr15PRIterationLoopINS4_7EnactorINS4_7ProblemINS3_9TestGraphIjjdLj1536ELj0EEEdLj0EEELj0ELj0EEEE4CoreEiEUlRKdSE_E_EEvPT_PT0_T1_PSK_T2_SI_SL_SL_
+                    2.38%  472.04us         1  472.04us  472.04us  472.04us  _ZN7gunrock5oprtr13ForAll_KernelINS_4util7Array1DIjjLj0ELj0EEEjZNS_3app2pr7ProblemINS5_9TestGraphIjjdLj1536ELj0EEEdLj0EE9DataSlice4InitERS9_jiijjEUlPjRKjE1_EEvT_T1_T0_
+                    2.23%  443.04us         6  73.840us  61.564us  86.490us  void cub::DeviceRadixSortDownsweepKernel<cub::DeviceRadixSortPolicy<double, unsigned int, unsigned int>::Policy700, bool=1, bool=1, double, unsigned int, unsigned int>(cub::DeviceRadixSortPolicy<double, unsigned int, unsigned int>::Policy700 const *, cub::DeviceRadixSortDownsweepKernel<cub::DeviceRadixSortPolicy<double, unsigned int, unsigned int>::Policy700, bool=1, bool=1, double, unsigned int, unsigned int>*, bool=1 const *, cub::DeviceRadixSortDownsweepKernel<cub::DeviceRadixSortPolicy<double, unsigned int, unsigned int>::Policy700, bool=1, bool=1, double, unsigned int, unsigned int>**, bool=1*, cub::DeviceRadixSortDownsweepKernel<cub::DeviceRadixSortPolicy<double, unsigned int, unsigned int>::Policy700, bool=1, bool=1, double, unsigned int, unsigned int>**, int, int, cub::GridEvenShare<cub::DeviceRadixSortDownsweepKernel<cub::DeviceRadixSortPolicy<double, unsigned int, unsigned int>::Policy700, bool=1, bool=1, double, unsigned int, unsigned int>**>)
+                    1.86%  369.64us         4  92.410us  33.598us  129.75us  void cub::DeviceRadixSortDownsweepKernel<cub::DeviceRadixSortPolicy<double, unsigned int, unsigned int>::Policy700, bool=0, bool=1, double, unsigned int, unsigned int>(cub::DeviceRadixSortPolicy<double, unsigned int, unsigned int>::Policy700 const *, cub::DeviceRadixSortDownsweepKernel<cub::DeviceRadixSortPolicy<double, unsigned int, unsigned int>::Policy700, bool=0, bool=1, double, unsigned int, unsigned int>*, bool=0 const *, cub::DeviceRadixSortDownsweepKernel<cub::DeviceRadixSortPolicy<double, unsigned int, unsigned int>::Policy700, bool=0, bool=1, double, unsigned int, unsigned int>**, bool=1*, cub::DeviceRadixSortDownsweepKernel<cub::DeviceRadixSortPolicy<double, unsigned int, unsigned int>::Policy700, bool=0, bool=1, double, unsigned int, unsigned int>**, int, int, cub::GridEvenShare<cub::DeviceRadixSortDownsweepKernel<cub::DeviceRadixSortPolicy<double, unsigned int, unsigned int>::Policy700, bool=0, bool=1, double, unsigned int, unsigned int>**>)
+                    1.84%  364.52us        10  36.452us  35.934us  37.534us  void cub::RadixSortScanBinsKernel<cub::DeviceRadixSortPolicy<double, unsigned int, unsigned int>::Policy700, unsigned int>(unsigned int*, int)
+                    1.43%  283.41us         6  47.234us  46.429us  49.309us  _ZN7gunrock5oprtr2BP6KernelILj1EjjjZNS_3app2pr15PRIterationLoopINS4_7EnactorINS4_7ProblemINS3_9TestGraphIjjdLj1536ELj0EEEdLj0EEELj0ELj0EEEE4CoreEiEUlRKjRjSE_SE_SE_SF_E_EEvbT2_PKT0_SH_PT1_NS_4util15CtaWorkProgressISH_EET3_
+                    0.75%  148.92us         7  21.274us  20.735us  21.854us  _ZN7gunrock5oprtr13ForAll_KernelINS_4util7Array1DIjdLj0ELj0EEEjZNS0_14neighborreduce6LaunchILj33554449ENS_5graph3CscIjjdLj512ELj0ELb1EEENS3_IjjLj0ELj0EEESA_NS0_15OprtrParametersINS_3app9TestGraphIjjdLj1536ELj0EEENSC_8FrontierIjjLj0ELj0EEEjEEZNSC_2pr15PRIterationLoopINSI_7EnactorINSI_7ProblemISE_dLj0EEELj0ELj0EEEE4CoreEiEUlRKjRjSQ_SQ_SQ_SR_E0_ZNSO_4CoreEiEUlRKdSU_E_EE9cudaErrorRKT0_PT1_PT2_RT3_T4_T5_NS14_6ValueTEEUlPdSQ_E0_EEvT_S10_SX_
+                    0.59%  117.94us         6  19.657us  18.879us  22.462us  void cub::DeviceRadixSortUpsweepKernel<cub::DeviceRadixSortPolicy<double, unsigned int, unsigned int>::Policy700, bool=1, bool=1, double, unsigned int>(cub::DeviceRadixSortPolicy<double, unsigned int, unsigned int>::Policy700 const *, bool=1*, cub::DeviceRadixSortPolicy<double, unsigned int, unsigned int>::Policy700 const *, int, int, cub::GridEvenShare<cub::DeviceRadixSortPolicy<double, unsigned int, unsigned int>::Policy700 const *>)
+                    0.50%  99.162us         4  24.790us  24.702us  24.895us  void cub::DeviceRadixSortUpsweepKernel<cub::DeviceRadixSortPolicy<double, unsigned int, unsigned int>::Policy700, bool=0, bool=1, double, unsigned int>(cub::DeviceRadixSortPolicy<double, unsigned int, unsigned int>::Policy700 const *, bool=0*, cub::DeviceRadixSortPolicy<double, unsigned int, unsigned int>::Policy700 const *, int, int, cub::GridEvenShare<cub::DeviceRadixSortPolicy<double, unsigned int, unsigned int>::Policy700 const *>)
+                    0.19%  37.502us         1  37.502us  37.502us  37.502us  _ZN7gunrock5oprtr13ForAll_KernelINS_4util7Array1DIjjLj0ELj0EEEjZNS_3app2pr7EnactorINS6_7ProblemINS5_9TestGraphIjjdLj1536ELj0EEEdLj0EEELj0ELj0EE7ExtractEvEUlPjRKjE0_EEvT_T1_T0_
+                    0.19%  36.894us         1  36.894us  36.894us  36.894us  _ZN7gunrock5oprtr13ForAll_KernelINS_4util7Array1DIjjLj0ELj0EEEjZNS_3app2pr7EnactorINS6_7ProblemINS5_9TestGraphIjjdLj1536ELj0EEEdLj0EEELj0ELj0EE7ExtractEvEUlPjRKjE2_EEvT_T1_T0_
+                    0.11%  20.927us         1  20.927us  20.927us  20.927us  _ZN7gunrock5oprtr13ForAll_KernelINS_4util7Array1DIjdLj0ELj0EEENS3_IjjLj0ELj0EEEjZNS_3app2pr7ProblemINS6_9TestGraphIjjdLj1536ELj0EEEdLj0EE9DataSlice5ResetEjEUlPdPjRKjE_EEvT_T0_T2_T1_
+                    0.07%  14.847us         7  2.1210us  2.0160us  2.4640us  _ZN7gunrock4util6reduce17SegReduce_GKernelIddjZNS_3app2pr15PRIterationLoopINS4_7EnactorINS4_7ProblemINS3_9TestGraphIjjdLj1536ELj0EEEdLj0EEELj0ELj0EEEE4CoreEiEUlRKdSE_E_EEvPT_PT0_T1_PSK_T2_SI_SL_SL_
+                    0.06%  11.358us         7  1.6220us  1.5350us  1.9520us  _ZN7gunrock5oprtr13ForAll_KernelINS_4util7Array1DIjdLj0ELj0EEEjZNS2_15SegmentedReduceIddjZNS_3app2pr15PRIterationLoopINS7_7EnactorINS7_7ProblemINS6_9TestGraphIjjdLj1536ELj0EEEdLj0EEELj0ELj0EEEE4CoreEiEUlRKdSH_E_EE9cudaErrorRNS3_ImcLj0ELj0EEERNS3_IT1_T_Lj0ELj0EEERNS3_ISM_T0_Lj0ELj0EEESM_RNS3_ISM_SM_Lj0ELj0EEET2_SQ_P11CUstream_stbjEUlPdRKjE_EEvSN_SM_SQ_
+                    0.06%  11.135us         1  11.135us  11.135us  11.135us  _ZN7gunrock5oprtr14ForEach_KernelINS_4util7Array1DIjdLj0ELj0EEEjZNS_3app2pr7ProblemINS5_9TestGraphIjjdLj1536ELj0EEEdLj0EE9DataSlice5ResetEjEUlRdE_EEvT_T1_T0_
+                    0.05%  10.655us         1  10.655us  10.655us  10.655us  _ZN7gunrock5oprtr14ForEach_KernelINS_4util7Array1DIjjLj0ELj0EEEjZNS_3app2pr7ProblemINS5_9TestGraphIjjdLj1536ELj0EEEdLj0EE9DataSlice4InitERS9_jiijjEUlRjE_EEvT_T1_T0_
+                    0.04%  8.2870us         1  8.2870us  8.2870us  8.2870us  _ZN7gunrock5oprtr13ForAll_KernelINS_4util7Array1DIjjLj0ELj0EEEjZNS_3app2pr7ProblemINS5_9TestGraphIjjdLj1536ELj0EEEdLj0EE9DataSlice4InitERS9_jiijjEUlPjRKjE_EEvT_T1_T0_
+                    0.03%  6.0800us         1  6.0800us  6.0800us  6.0800us  _ZN7gunrock5oprtr13ForAll_KernelINS_4util7Array1DIjjLj0ELj0EEEjZNS_3app2pr7EnactorINS6_7ProblemINS5_9TestGraphIjjdLj1536ELj0EEEdLj0EEELj0ELj0EE7ExtractEvEUlPjRKjE1_EEvT_T1_T0_
+      API calls:   97.45%  1.43545s         2  717.73ms  138.72us  1.43531s  cudaMemGetInfo
+                    1.19%  17.575ms        26  675.95us  10.654us  5.1245ms  cudaMemcpy
+                    0.43%  6.2766ms        22  285.30us  2.1120us  1.2278ms  cudaStreamSynchronize
+                    0.32%  4.7178ms        27  174.73us  5.8640us  416.45us  cudaMalloc
+                    0.28%  4.0572ms        23  176.40us     428ns  1.0967ms  cudaFree
+                    0.09%  1.3797ms         1  1.3797ms  1.3797ms  1.3797ms  cudaMallocHost
+                    0.07%  1.0655ms         3  355.16us  325.84us  376.41us  cudaGetDeviceProperties
+                    0.05%  781.15us        79  9.8880us  6.0840us  46.477us  cudaLaunchKernel
+                    0.03%  411.26us        12  34.271us  4.0690us  65.337us  cudaMemcpyAsync
+                    0.02%  343.81us        96  3.5810us     132ns  199.95us  cuDeviceGetAttribute
+                    0.02%  262.92us         2  131.46us  99.143us  163.77us  cudaHostRegister
+                    0.02%  229.44us         1  229.44us  229.44us  229.44us  cudaHostUnregister
+                    0.01%  130.70us         1  130.70us  130.70us  130.70us  cuDeviceTotalMem
+                    0.01%  117.48us         3  39.159us  6.2220us  97.881us  cudaDeviceSynchronize
+                    0.01%  74.774us         3  24.924us  9.5350us  34.399us  cudaStreamCreateWithFlags
+                    0.00%  32.634us        18  1.8130us     377ns  11.118us  cudaSetDevice
+                    0.00%  21.487us        33     651ns     430ns  3.0920us  cudaEventCreateWithFlags
+                    0.00%  20.761us         3  6.9200us  3.4220us  9.6880us  cudaStreamDestroy
+                    0.00%  19.215us         1  19.215us  19.215us  19.215us  cudaStreamCreate
+                    0.00%  16.265us         7  2.3230us  2.0390us  2.5550us  cudaStreamQuery
+                    0.00%  16.075us         4  4.0180us  3.0800us  5.4870us  cudaFuncGetAttributes
+                    0.00%  15.600us         1  15.600us  15.600us  15.600us  cuDeviceGetName
+                    0.00%  15.345us         7  2.1920us  1.7790us  2.4630us  cudaEventQuery
+                    0.00%  9.7360us         7  1.3900us     864ns  3.0390us  cudaEventRecord
+                    0.00%  9.0500us        12     754ns     462ns  1.6080us  cudaOccupancyMaxActiveBlocksPerMultiprocessorWithFlags
+                    0.00%  5.3190us        30     177ns     168ns     370ns  cudaPeekAtLastError
+                    0.00%  5.0860us         6     847ns     490ns  1.3330us  cudaGetDevice
+                    0.00%  3.4580us         1  3.4580us  3.4580us  3.4580us  cuDeviceGetPCIBusId
+                    0.00%  2.8830us         2  1.4410us     792ns  2.0910us  cudaEventCreate
+                    0.00%  1.9510us         3     650ns     131ns  1.4860us  cuDeviceGetCount
+                    0.00%  1.6430us         2     821ns     537ns  1.1060us  cudaDeviceGetAttribute
+                    0.00%  1.5510us         2     775ns     188ns  1.3630us  cuDeviceGet
+                    0.00%     442ns         2     221ns     152ns     290ns  cudaGetDeviceCount
+                    0.00%     284ns         1     284ns     284ns     284ns  cudaDriverGetVersion
+                    0.00%     240ns         1     240ns     240ns     240ns  cuDeviceGetUuid
+                    0.00%     211ns         1     211ns     211ns     211ns  cudaRuntimeGetVersion

@@ -1,0 +1,1021 @@
+{
+    "traceEvents": [
+        {
+            "ph": "M",
+            "args": {
+                "name": "Allocators"
+            },
+            "pid": 0,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/gpu:0 (Tesla V100-SXM2-16GB)/context#0/stream#5:MemcpyDtoH Compute"
+            },
+            "pid": 1,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/gpu:0 (Tesla V100-SXM2-16GB)/context#0/stream#5:MemcpyDtoH Tensors"
+            },
+            "pid": 2,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/gpu:0 (Tesla V100-SXM2-16GB)/context#0/stream#3 Compute"
+            },
+            "pid": 3,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/gpu:0 (Tesla V100-SXM2-16GB)/context#0/stream#3 Tensors"
+            },
+            "pid": 4,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/gpu:0 (Tesla V100-SXM2-16GB)/context#0/stream#2:Kernel Compute"
+            },
+            "pid": 5,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/gpu:0 (Tesla V100-SXM2-16GB)/context#0/stream#2:Kernel Tensors"
+            },
+            "pid": 6,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/gpu:0 (Tesla V100-SXM2-16GB)/context#0/stream#1:Kernel Compute"
+            },
+            "pid": 7,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/gpu:0 (Tesla V100-SXM2-16GB)/context#0/stream#1:Kernel Tensors"
+            },
+            "pid": 8,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/gpu:0 (Tesla V100-SXM2-16GB)/context#0/stream#4:MemcpyHtoD Compute"
+            },
+            "pid": 9,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/gpu:0 (Tesla V100-SXM2-16GB)/context#0/stream#4:MemcpyHtoD Tensors"
+            },
+            "pid": 10,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/device:GPU:0/stream:all Compute"
+            },
+            "pid": 11,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/device:GPU:0/stream:all Tensors"
+            },
+            "pid": 12,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/host:CPU Compute"
+            },
+            "pid": 13,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/host:CPU Tensors"
+            },
+            "pid": 14,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:CPU:0 Compute"
+            },
+            "pid": 15,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:CPU:0 Tensors"
+            },
+            "pid": 16,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:GPU:0 Compute"
+            },
+            "pid": 17,
+            "name": "process_name"
+        },
+        {
+            "ph": "M",
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:GPU:0 Tensors"
+            },
+            "pid": 18,
+            "name": "process_name"
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "edge_35_Reshape::MemcpyDtoH",
+                "op": "unknown"
+            },
+            "pid": 1,
+            "ts": 1571333456916111,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 16
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "cudnn_lstm/CudnnRNN:CudnnRNN#id=3#::_Z17gemv2T_kernel_valIfffLi128ELi16ELi2ELi4ELb0E16cublasGemvParamsI16cublasGemvTensorIKfES1_IfEfEEvT1_S6_T7_",
+                "op": "unknown"
+            },
+            "pid": 3,
+            "ts": 1571333456915874,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 32
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "cudnn_lstm/CudnnRNN:CudnnRNN#id=3#::_Z19LSTM_elementWise_fpIfffEviiiiPKT_S2_S2_PS0_PT0_S3_S2_S3_bi18cudnnRNNClipMode_t21cudnnNanPropagation_tff",
+                "op": "unknown"
+            },
+            "pid": 3,
+            "ts": 1571333456915908,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 9
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "cudnn_lstm/CudnnRNN:CudnnRNN#id=3#::MemcpyDtoD",
+                "op": "unknown"
+            },
+            "pid": 3,
+            "ts": 1571333456915921,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "cudnn_lstm/CudnnRNN:CudnnRNN#id=3#::MemcpyDtoD",
+                "op": "unknown"
+            },
+            "pid": 3,
+            "ts": 1571333456915932,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "cudnn_lstm/CudnnRNN:CudnnRNN#id=3#::_Z17gemv2T_kernel_valIfffLi128ELi16ELi2ELi4ELb0E16cublasGemvParamsI16cublasGemvTensorIKfES1_IfEfEEvT1_S6_T7_",
+                "op": "unknown"
+            },
+            "pid": 5,
+            "ts": 1571333456915835,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 53
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "cudnn_lstm/zeros_1:Fill#id=3#::_ZN5Eigen8internal15EigenMetaKernelINS_15TensorEvaluatorIKNS_14TensorAssignOpINS_9TensorMapINS_6TensorIfLi1ELi1EiEELi16ENS_11MakePointerEEEKNS_20TensorCwiseNullaryOpINS0_15scalar_const_opIfEEKS8_EEEENS_9GpuDeviceEEEiEEvT_T0_",
+                "op": "unknown"
+            },
+            "pid": 7,
+            "ts": 1571333456910048,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 48
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "edge_5_IteratorGetNext::MemcpyHtoD",
+                "op": "unknown"
+            },
+            "pid": 9,
+            "ts": 1571333456900202,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 17
+        },
+        {
+            "name": "Fill#id=3#",
+            "args": {
+                "name": "cudnn_lstm/zeros_1",
+                "op": "Fill#id=3#"
+            },
+            "pid": 11,
+            "ts": 1571333456910048,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 48
+        },
+        {
+            "name": "CudnnRNN#id=3#",
+            "args": {
+                "name": "cudnn_lstm/CudnnRNN",
+                "op": "CudnnRNN#id=3#"
+            },
+            "pid": 11,
+            "ts": 1571333456915835,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 53
+        },
+        {
+            "name": "CudnnRNN#id=3#",
+            "args": {
+                "name": "cudnn_lstm/CudnnRNN",
+                "op": "CudnnRNN#id=3#"
+            },
+            "pid": 11,
+            "ts": 1571333456915874,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 32
+        },
+        {
+            "name": "CudnnRNN#id=3#",
+            "args": {
+                "name": "cudnn_lstm/CudnnRNN",
+                "op": "CudnnRNN#id=3#"
+            },
+            "pid": 11,
+            "ts": 1571333456915908,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 9
+        },
+        {
+            "name": "",
+            "args": {
+                "name": "edge_5_IteratorGetNext",
+                "op": ""
+            },
+            "pid": 11,
+            "ts": 1571333456900202,
+            "cat": "Op",
+            "tid": 2,
+            "ph": "X",
+            "dur": 17
+        },
+        {
+            "name": "CudnnRNN#id=3#",
+            "args": {
+                "name": "cudnn_lstm/CudnnRNN",
+                "op": "CudnnRNN#id=3#"
+            },
+            "pid": 11,
+            "ts": 1571333456915921,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "CudnnRNN#id=3#",
+            "args": {
+                "name": "cudnn_lstm/CudnnRNN",
+                "op": "CudnnRNN#id=3#"
+            },
+            "pid": 11,
+            "ts": 1571333456915932,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "",
+            "args": {
+                "name": "edge_35_Reshape",
+                "op": ""
+            },
+            "pid": 11,
+            "ts": 1571333456916111,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 16
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "IteratorV2:IteratorV2",
+                "op": "unknown"
+            },
+            "pid": 13,
+            "ts": 1571333456893909,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 26
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "IteratorGetNext/_0:_Send",
+                "op": "unknown"
+            },
+            "pid": 13,
+            "ts": 1571333456899988,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 247
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "transpose:Transpose",
+                "op": "unknown"
+            },
+            "pid": 13,
+            "ts": 1571333456900485,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 14
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "cudnn_lstm/Shape:Shape",
+                "op": "unknown"
+            },
+            "pid": 13,
+            "ts": 1571333456900521,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "cudnn_lstm/strided_slice_1:StridedSlice",
+                "op": "unknown"
+            },
+            "pid": 13,
+            "ts": 1571333456900555,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4344
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "cudnn_lstm/zeros_1/packed:Pack",
+                "op": "unknown"
+            },
+            "pid": 13,
+            "ts": 1571333456904928,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4241
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "cudnn_lstm/zeros_1:Fill",
+                "op": "unknown"
+            },
+            "pid": 13,
+            "ts": 1571333456909191,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 897
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "cudnn_lstm/CudnnRNN:CudnnRNN",
+                "op": "unknown"
+            },
+            "pid": 13,
+            "ts": 1571333456910103,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5884
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "transpose_1:Transpose",
+                "op": "unknown"
+            },
+            "pid": 13,
+            "ts": 1571333456916022,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "Reshape:Reshape",
+                "op": "unknown"
+            },
+            "pid": 13,
+            "ts": 1571333456916035,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "Reshape/_2:_Send",
+                "op": "unknown"
+            },
+            "pid": 13,
+            "ts": 1571333456916043,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 90
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "Iterator::Model::Batch::TensorSlice",
+                "op": "unknown"
+            },
+            "pid": 13,
+            "ts": 1571333456894145,
+            "cat": "Op",
+            "tid": 1,
+            "ph": "X",
+            "dur": 4321
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "Iterator::Model::Batch",
+                "op": "unknown"
+            },
+            "pid": 13,
+            "ts": 1571333456894138,
+            "cat": "Op",
+            "tid": 2,
+            "ph": "X",
+            "dur": 5699
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "Iterator::Model",
+                "op": "unknown"
+            },
+            "pid": 13,
+            "ts": 1571333456894040,
+            "cat": "Op",
+            "tid": 3,
+            "ph": "X",
+            "dur": 5799
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "_SOURCE:NoOp",
+                "op": "unknown"
+            },
+            "pid": 13,
+            "ts": 1571333456892628,
+            "cat": "Op",
+            "tid": 4,
+            "ph": "X",
+            "dur": 17
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "cudnn_lstm/zeros_1/packed/2:Const",
+                "op": "unknown"
+            },
+            "pid": 13,
+            "ts": 1571333456893861,
+            "cat": "Op",
+            "tid": 4,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "Reshape/shape:Const",
+                "op": "unknown"
+            },
+            "pid": 13,
+            "ts": 1571333456893953,
+            "cat": "Op",
+            "tid": 4,
+            "ph": "X",
+            "dur": 1
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "transpose_1/perm:Const",
+                "op": "unknown"
+            },
+            "pid": 13,
+            "ts": 1571333456893962,
+            "cat": "Op",
+            "tid": 4,
+            "ph": "X",
+            "dur": 0
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "cudnn_lstm/strided_slice_1/stack_2:Const",
+                "op": "unknown"
+            },
+            "pid": 13,
+            "ts": 1571333456893968,
+            "cat": "Op",
+            "tid": 4,
+            "ph": "X",
+            "dur": 0
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "cudnn_lstm/opaque_kernel:VariableV2",
+                "op": "unknown"
+            },
+            "pid": 13,
+            "ts": 1571333456893975,
+            "cat": "Op",
+            "tid": 4,
+            "ph": "X",
+            "dur": 11
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "cudnn_lstm/strided_slice_1/stack_1:Const",
+                "op": "unknown"
+            },
+            "pid": 13,
+            "ts": 1571333456893993,
+            "cat": "Op",
+            "tid": 4,
+            "ph": "X",
+            "dur": 1
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "cudnn_lstm/zeros_1/Const:Const",
+                "op": "unknown"
+            },
+            "pid": 13,
+            "ts": 1571333456893998,
+            "cat": "Op",
+            "tid": 4,
+            "ph": "X",
+            "dur": 2
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "cudnn_lstm/zeros_1/packed/0:Const",
+                "op": "unknown"
+            },
+            "pid": 13,
+            "ts": 1571333456894005,
+            "cat": "Op",
+            "tid": 4,
+            "ph": "X",
+            "dur": 0
+        },
+        {
+            "name": "unknown",
+            "args": {
+                "name": "cudnn_lstm/opaque_kernel/read:Identity",
+                "op": "unknown"
+            },
+            "pid": 13,
+            "ts": 1571333456894010,
+            "cat": "Op",
+            "tid": 4,
+            "ph": "X",
+            "dur": 1
+        },
+        {
+            "name": "NoOp",
+            "args": {
+                "name": "_SOURCE",
+                "op": "NoOp"
+            },
+            "pid": 15,
+            "ts": 1571333456892635,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 11
+        },
+        {
+            "name": "IteratorV2",
+            "args": {
+                "name": "IteratorV2",
+                "op": "IteratorV2"
+            },
+            "pid": 15,
+            "ts": 1571333456893903,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 54
+        },
+        {
+            "name": "IteratorGetNext",
+            "args": {
+                "input0": "IteratorV2",
+                "name": "IteratorGetNext",
+                "op": "IteratorGetNext"
+            },
+            "pid": 15,
+            "ts": 1571333456893962,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5890
+        },
+        {
+            "name": "_Retval",
+            "args": {
+                "input0": "Reshape/_3",
+                "name": "_retval_Reshape_0_0",
+                "op": "_Retval"
+            },
+            "pid": 15,
+            "ts": 1571333456916354,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Reshape",
+            "pid": 17,
+            "ts": 1571333456916040,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 0
+        },
+        {
+            "name": "Reshape",
+            "pid": 15,
+            "ts": 1571333456916354,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "t",
+            "id": 0
+        },
+        {
+            "name": "NoOp",
+            "args": {
+                "name": "_SOURCE",
+                "op": "NoOp"
+            },
+            "pid": 17,
+            "ts": 1571333456892603,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 97
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "cudnn_lstm/zeros_1/packed/2",
+                "op": "Const"
+            },
+            "pid": 17,
+            "ts": 1571333456893858,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 22
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "Reshape/shape",
+                "op": "Const"
+            },
+            "pid": 17,
+            "ts": 1571333456893951,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 8
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "transpose_1/perm",
+                "op": "Const"
+            },
+            "pid": 17,
+            "ts": 1571333456893961,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "cudnn_lstm/strided_slice_1/stack_2",
+                "op": "Const"
+            },
+            "pid": 17,
+            "ts": 1571333456893966,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "VariableV2",
+            "args": {
+                "name": "cudnn_lstm/opaque_kernel",
+                "op": "VariableV2"
+            },
+            "pid": 17,
+            "ts": 1571333456893974,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 15
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "cudnn_lstm/strided_slice_1/stack_1",
+                "op": "Const"
+            },
+            "pid": 17,
+            "ts": 1571333456893992,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "cudnn_lstm/zeros_1/Const",
+                "op": "Const"
+            },
+            "pid": 17,
+            "ts": 1571333456893997,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5
+        },
+        {
+            "name": "Const",
+            "args": {
+                "name": "cudnn_lstm/zeros_1/packed/0",
+                "op": "Const"
+            },
+            "pid": 17,
+            "ts": 1571333456894004,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 3
+        },
+        {
+            "name": "Identity",
+            "args": {
+                "input0": "cudnn_lstm/opaque_kernel",
+                "name": "cudnn_lstm/opaque_kernel/read",
+                "op": "Identity"
+            },
+            "pid": 17,
+            "ts": 1571333456894009,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "input0": "IteratorGetNext/_1",
+                "input1": "transpose_1/perm",
+                "name": "transpose",
+                "op": "Transpose"
+            },
+            "pid": 17,
+            "ts": 1571333456900477,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 32
+        },
+        {
+            "name": "IteratorGetNext",
+            "pid": 15,
+            "ts": 1571333456899852,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "s",
+            "id": 1
+        },
+        {
+            "name": "IteratorGetNext",
+            "pid": 17,
+            "ts": 1571333456900477,
+            "cat": "DataFlow",
+            "tid": 0,
+            "ph": "t",
+            "id": 1
+        },
+        {
+            "name": "Shape",
+            "args": {
+                "input0": "transpose",
+                "name": "cudnn_lstm/Shape",
+                "op": "Shape"
+            },
+            "pid": 17,
+            "ts": 1571333456900518,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 25
+        },
+        {
+            "name": "StridedSlice",
+            "args": {
+                "input2": "cudnn_lstm/strided_slice_1/stack_1",
+                "input3": "cudnn_lstm/strided_slice_1/stack_2",
+                "input0": "cudnn_lstm/Shape",
+                "input1": "cudnn_lstm/strided_slice_1/stack_2",
+                "name": "cudnn_lstm/strided_slice_1",
+                "op": "StridedSlice"
+            },
+            "pid": 17,
+            "ts": 1571333456900549,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4364
+        },
+        {
+            "name": "Pack",
+            "args": {
+                "input2": "cudnn_lstm/zeros_1/packed/2",
+                "input0": "cudnn_lstm/zeros_1/packed/0",
+                "input1": "cudnn_lstm/strided_slice_1",
+                "name": "cudnn_lstm/zeros_1/packed",
+                "op": "Pack"
+            },
+            "pid": 17,
+            "ts": 1571333456904923,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 4254
+        },
+        {
+            "name": "Fill",
+            "args": {
+                "input0": "cudnn_lstm/zeros_1/packed",
+                "input1": "cudnn_lstm/zeros_1/Const",
+                "name": "cudnn_lstm/zeros_1",
+                "op": "Fill"
+            },
+            "pid": 17,
+            "ts": 1571333456909188,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 907
+        },
+        {
+            "name": "CudnnRNN",
+            "args": {
+                "input2": "cudnn_lstm/zeros_1",
+                "input3": "cudnn_lstm/opaque_kernel/read",
+                "input0": "transpose",
+                "input1": "cudnn_lstm/zeros_1",
+                "name": "cudnn_lstm/CudnnRNN",
+                "op": "CudnnRNN"
+            },
+            "pid": 17,
+            "ts": 1571333456910100,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 5902
+        },
+        {
+            "name": "Transpose",
+            "args": {
+                "input0": "cudnn_lstm/CudnnRNN",
+                "input1": "transpose_1/perm",
+                "name": "transpose_1",
+                "op": "Transpose"
+            },
+            "pid": 17,
+            "ts": 1571333456916018,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 11
+        },
+        {
+            "name": "Reshape",
+            "args": {
+                "input0": "transpose_1",
+                "input1": "Reshape/shape",
+                "name": "Reshape",
+                "op": "Reshape"
+            },
+            "pid": 17,
+            "ts": 1571333456916034,
+            "cat": "Op",
+            "tid": 0,
+            "ph": "X",
+            "dur": 6
+        }
+    ]
+}

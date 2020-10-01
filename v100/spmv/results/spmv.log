@@ -1,0 +1,6 @@
+sparse matrix A is 10000 x 10000 with 49600 nonzeros, base=0
+norm_r = 3.46654
+Time for total SPMV execution is 1.82698 ms
+Time for kernel SPMV execution is 0.104928 ms
+Time for setup SPMV execution is 1.25507 ms
+Time for destroy SPMV execution is 0.466976 ms

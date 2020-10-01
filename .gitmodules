@@ -1,0 +1,6 @@
+[submodule "intel_models"]
+	path = intel_models
+	url = https://github.com/IntelAI/models.git
+[submodule "v100/gunrock_graphs"]
+	path = v100/gunrock_graphs
+	url = https://github.com/gunrock/gunrock.git
